@@ -55,10 +55,6 @@ public class DepartmentServiceImpl implements DepartmentService {
         return null; // or throw an exception
     }
 
-    @Override
-    public Department getDepartmentByCode(String code) {
-        return departmentRepository.findByDepartmentCode(code);
-    }
 
     @Override
     public List<Department> searchDepartments(String query) {
