@@ -23,10 +23,6 @@ public class DepartmentController {
         return departmentService.fetchAllData();
     }
 
-    @GetMapping("/departments/code/{code}")
-    public Department getDepartmentByCode(@PathVariable("code") String code) {
-        return departmentService.getDepartmentByCode(code);
-    }
 
     @GetMapping("/departments/search")
     public List<Department> searchDepartments(@RequestParam("query") String query) {
