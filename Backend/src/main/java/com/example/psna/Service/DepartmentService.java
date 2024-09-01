@@ -14,7 +14,5 @@ public interface DepartmentService {
 
     Department updateDepartment(Department department, Long departmentID);
 
-    Department getDepartmentByCode(String code);
-
     List<Department> searchDepartments(String query); // New method
 }
